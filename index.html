@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <i class="fa-duotone fa-microchip-ai"></i>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Picture1.jpg" class="logo">
+            <ul>
+                <li><a href = "#">Home</a></li>
+                <li><a href = "#">About</a></li>
+                <li><a href = "#">My Achievements</a></li>
+                <li><a href = "#">Contact me</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>HI,</p>
+            <h5>I am <span>GOPIKA P G</span><br>From Electronics And Communication Engineering</h5>
+        </div>
+    </div>
+</div>
+<!----------about------>
+<div id="about">
+    <div class="cointainer">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="aboutme.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Pursuing my 3rd year Pursuing my 3rd year bachelor's degree in Electronics And Communication Engineering. <br>
+                   I am from udumalpet. I consider myself as a outgoing person. I have the thirst for knowledge showering my <br>
+                   interest towards learning new things and to develop my skills. I completed my schooling in 2020 from Vidya <br>
+                   nethhra matriculation school. My part of interest towards creating lot of websites using <b>HTML, CSS , JAVASCRIPT.</b></p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Area of Interest')">Area of Interest</p>
+                        <p class="tab-links" onclick="opentab('Educational Qualification')">Educational Qualification</p>
+                        <p class="tab-links" onclick="opentab('Achievement')">Achievement</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>C</span>(Intermediate)</li>
+                            <li><span>C++</span>(Basics)</li>
+                            <li><span>PYTHON</span>(Basics)</li>
+                            <li><span>HTML</span>(Designing website)</li>
+                            <li><span>MYSQL</span>(Designing website)</li>
+                            <li><span>CSS</span>(Designing website)</li>
+                        </ul>
+                        <h3>CORE COMPETENCIES</h3>
+                        <ul>
+                            <li><span>PROTEUS</span>(Intermediate)</li>
+                            <li><span>MATLAB</span>(Intermediate)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Area of Interest">
+                        <ol>
+                            <li><span>DBMS</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>REACT JS</span></li>
+                        </ol>
+                    </div>
+                    <div class="tab-contents" id="Educational Qualification">
+                        <h3>BANNARI AMMAN INSTITUTE OF TECHNOLOGY<br>B.E ELECTRONICS AND COMMUNICATION ENGINEERING(BATCH: 2024)</h3>
+                        <ul>
+                            <li><span>CGPA : 8.45%</span>   till 5th semester</li>
+                        </ul>
+                        <h3>VIDYA NETHRRA MATRICULATION HIGHER SECONDARY SCHOOL</h3>
+                        <ul>
+                            <li><span>HSC: 77.1%</span>   Graduated  in 2020<br><span>SSLC: 87 %</span>   Graduated in 2018</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Achievement">
+                       <ul><li><span><b>THIRD PLACE:</b></span> PAPER PRESENTATION 2021<br>TOPIC <span>3D ROADS</span><br><b>EVENT NAME:</b><span>INFIERNIX 2K21</span>
+                        </li></ul>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="MyAchievements">
+    <div class="conitainer">
+        <h1 class="sub-title">My Achievements</h1>
+        <div class="MyAchievements-list">
+            <div>
+            <h5>PROJECT</h5>
+            <ul><li><span>TOPIC:</span>Old People emergency alerting System <br><span>-TEAM SIZE: 4</span><br>
+                 <span>DURATION:</span> 3 MONTH FROM 10/10/2022 TO 16/1/2023<br>
+                 <span>TECHNOLOGY:</span> Artificial Intelligence and <br> Machine Learning <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Fall detection can be utilised to improve care<br> for the elderly, who are more prone to falling.The model can be further extended with even more larger datasets than in present work along with optimization algorithm coupled with deep learning in the future <br> research works. </li></ul>
+            </div>
+            <div>
+                <h5>PAPER PRESENTATIONS</h5>
+                <ol>
+                <li>National level Technical Symposium at <br>Government college of Engineering Nagpur<br><b> on topic <span>Cloud Computing</span><br>- <span>TEAM LEADER</span></li>
+                <li>An International Symposium at<br> <span>SAI RAM Engineering college</span></li>
+                <li>Conference at Sengunthar Engineering College-<br><span>TEAM LEADER</span></li>
+                </ol>
+                
+        </div>
+        <div>
+            <h5>INTERNSHIPS</h5>
+             <ol><li><span><b>Enthu Technology Solutions India Pvt Ltd,<br> Coimbatore, Tamilnadu</span></b><br>
+             <span>DURATION:</span>&nbsp&nbsp15 days on IOT (Offline mode)<br>
+             From 02 May 2022 to 18 May 2022<br>
+             <span>TOPIC:</span>Internet of Things (IoT)</li>
+             <li><span><b>Suven Consultants & Technology Pvt.Ltd</b></span><br><span>DURATION:</span>15 days on PHP - MySQL<br><span>TOPIC:</span>MySQL </li></ol>
+        </div>
+
+    </div>
+</div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
